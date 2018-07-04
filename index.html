@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="rps9.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Righteous" rel="stylesheet">
+		<link rel="stylesheet" href="rps9.css" />			
+	</head>
+	<body>
+		<div id="boxes">
+			<div id="dialog" class="window">
+				<form name="startmenu" method="post">
+					<input type="radio" name="roundoption" value="10" checked> 10 Rounds<br>
+					<input type="radio" name="roundoption" value="25"> 25 Rounds<br>
+					<input type="radio" name="roundoption" value="50"> 50 Rounds<br>
+					<input type="submit" value="Start Game" onclick="startGame()" class="close">
+				</form>
+			</div>
+			<div id="mask"></div>
+		</div>
+		<div>
+			<p id="results"></p>
+			<p id="score"></p>
+		</body>
+		<div name="rpsmenu" class="rpsmenubar">
+			<input type="radio" class="rpsoption" name="rpsoption" value="rock" id="optionRock" checked>
+			<label for="optionRock" class="rpsmenu1">ROCK</label>
+			<input type="radio" class="rpsoption" name="rpsoption" value="scissors" id="optionScissors">
+			<label for="optionScissors" class="rpsmenu2">SCISSORS</label>
+			<input type="radio" class="rpsoption" name="rpsoption" value="paper" id="optionPaper">
+			<label for="optionPaper" class="rpsmenu3">PAPER</label>
+			<input type="radio" class="rpsoption" name="rpsoption" value="gun" id="optionGun">
+			<label for="optionGun" class="rpsmenu4">GUN</label>
+			<input type="radio" class="rpsoption" name="rpsoption" value="water" id="optionWater">
+			<label for="optionWater" class="rpsmenu5">WATER</label>
+			<input type="radio" class="rpsoption" name="rpsoption" value="air" id="optionAir">
+			<label for="optionAir" class="rpsmenu6">AIR</label>
+			<input type="radio" class="rpsoption" name="rpsoption" value="sponge" id="optionSponge">
+			<label for="optionSponge" class="rpsmenu7">SPONGE</label>
+			<input type="radio" class="rpsoption" name="rpsoption" value="human" id="optionHuman">
+			<label for="optionHuman" class="rpsmenu8">HUMAN</label>
+			<input type="radio" class="rpsoption" name="rpsoption" value="fire" id="optionFire">
+			<label for="optionFire" class="rpsmenu9">FIRE</label>
+			<input type="submit" value="Finalize Choice" onclick="cpuChooses();">
+		</div>
+		<div>
+		<img src="rps9.jpg" width="50%">
+		<div>
+</html>							
