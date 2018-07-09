@@ -9,6 +9,7 @@ function startGame(){
 	document.getElementById("score").innerHTML = "Player: " + playerScore + "   CPU: " + cpuScore + "<br>Round " + currentRound + " of " + roundLimit;
 }
 
+
 function cpuChooses(){
 	var userChoice = $("input[name=rpsoption]:checked").val() //getElementById isn't used to get the value because I had to use different IDs for the CSS to work.
 	var computerChoice = Math.random();
